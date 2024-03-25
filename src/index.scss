@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 font-body px-5 text-white;
+  }
+}
+@layer components {
+  .page-container {
+    max-width: 1280px;
+    @apply mx-auto;
+  }
+  .movie-list .swiper-slide {
+    width: 250px;
+    height: auto;
+  }
+  .banner .swiper {
+    height: 100%;
+  }
+
+  /* YouTubeSlider.css */
+  .youtube-slider-container {
+    @apply mx-auto w-full; /* Center the container and limit its width */
+  }
+
+  .youtube-slider-controls button {
+    @apply py-2 px-4 bg-gray-500 text-white rounded cursor-pointer; /* Apply Tailwind classes for styling buttons */
+  }
+}
+//Pagination
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .selected {
+    @apply text-primary;
+  }
+}
